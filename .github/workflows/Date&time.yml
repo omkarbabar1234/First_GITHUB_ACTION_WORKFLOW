@@ -4,7 +4,7 @@ name: Date & TIMe
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/3 * * * *"
+    - cron: "*/5 * * * *"
 
 jobs:
   run-script:
