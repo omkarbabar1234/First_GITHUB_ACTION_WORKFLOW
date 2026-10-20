@@ -1,0 +1,15 @@
+name: Schedule-job
+
+on:
+  schedule:
+    - cron: "8 18 * * *"
+
+
+jobs:
+  run-script:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Print, Message
+        run: echo " The Workflow executed Sucessfully"
+        
