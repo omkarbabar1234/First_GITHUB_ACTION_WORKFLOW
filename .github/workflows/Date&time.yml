@@ -1,0 +1,23 @@
+name: Date & TIMe
+
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/3 * * * *"
+
+jobs:
+  run-script:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Check date and time
+        run: |
+          echo "Workflow Executed"
+          echo "Current time"
+          date -u
+          echo "Current time is"
+          date
+          echo "Timezone:"
+          timedatectl
+   
